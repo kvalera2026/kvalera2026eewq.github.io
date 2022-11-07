@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Anya Forger</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@600&family=Cinzel+Decorative:wght@700&family=Passion+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=PT+Mono&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <style>
+
+            
+            body{
+                margin:0;
+                padding:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .logo h1 {
+                color: red;
+                font-family: 'Caveat', cursive;
+                font-size: 40px;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+
+            nav{
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100px;
+                padding: 10px 90px;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-bottom:1px solid #fff;
+            }
+
+            nav.logo{
+                padding: 22px 20px;
+                height:80px;
+                float: left;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            nav ul{
+                list-style: none;
+                float: right;
+                margin-top: -100px;
+                padding: 0;
+                display: flex;
+                font-family: 'Baloo 2', cursive;
+                margin-right: 200px;
+            }
+
+            nav ul li a{
+                line-height: 80px;
+                color: #fff;
+                padding: 12px 30px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            nav ul li a:hover{
+                background: red;
+                color: black;
+                border-radius: 200px;
+            }
+            
+            section{
+                width: 100%;
+                height: 100vh;
+                background: #FF69B4;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .logo img{
+                position: absolute;
+                margin-top: -115px;
+                margin-left: -40px;
+                width: 100px;
+            }
+
+            .select{
+                text-decoration:overline ;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown {
+                width: 250px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown{  
+                display: block;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown2 {
+                width: 350px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown2{  
+                display: block;
+            }
+
+            .peanuts h2{
+                float: left;
+                font-size: 50px;
+                font-family: 'Handlee', cursive;
+                margin-top: 130px;
+                margin-left: 100px;
+            }
+
+            .peanuts p{
+                float: left;
+                font-size: 25px;
+                font-family: 'Roboto Slab', serif;
+                margin-top: -270px;
+                margin-left: 100px;
+                margin-right: 700px;
+            }
+
+            .peanuts img{
+                float: right;
+                margin-top: 200px;
+                margin-right: 100px;
+                width: 300px;
+            }
+
+            .footer{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                width: 100%;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-top:1px solid #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>WakuWaku</h1>
+                <img src="wakuwaku.png" alt="Website Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="dropdown">
+                        <li><a href="AboutMePage.html">About the Author</a></li>
+                        <li><a href="AboutTheWebsite.html">About the Website</a></li>
+                    </ul>
+                </li>
+                <li><a href="SpyXFamily.html">Spy X Family</a></li>
+                <li><span class="select"><a href="#">Characters</a></span>
+                    <ul class="dropdown2">
+                        <li><a href="loid.html">Loid Forger  "Twilight"</a></li>
+                        <li><a href="yor.html">Yor Forger  "Thorn Princess"</a></li>
+                        <li><a href="anya.html">Anya Forger  "Anya"</a></li>
+                    </ul>
+                <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="peanuts">
+                <img src="anya3.png" alt="Anya Forger">
+                <h2>Anya Forger</h2>
+                <p>The deuteragonist of the series. Formerly known as Test Subject "007", she is a telepath whose abilities were created by an unknown organization. She is currently a student at Eden Academy and the adopted daughter of <a href="loid.html">Loid Forger</a> and <a href="yor.html">Yor Forger</a>. <br><br>Anya is a short young girl, height of 99.5 cm, with fair skin and green eyes. A noticeable characteristic of anya is her light-pink hair that curls inwards and her horn-like ornaments. At Eden Academy, Anya wears the standard uniform with knee-high socks and black Mary Janes. She carries around her brown school bag with a sheep keychain attached to it. Meanwhile during physical education class (P.E), Anya wears the school gym uniform with her hair tied back with a red headband along with white socks and shoes.<br><br>She made her first appearance in chapter 1 of the manga series, and in episode 1 of the anime series. She is portrayed by the japanese voice actress Atsumi Tanezaki and english voice actress Megan Shipman.  </p>
+            </div>
+        </section>
+        <div class="footer">
+            &copy; Image: Pinterest. Spy X Family Wiki. All Rights Reserved.
+        </div>
+    </body>
+</html>

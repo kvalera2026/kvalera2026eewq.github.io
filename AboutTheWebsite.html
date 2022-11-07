@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>About the Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@600&family=Cinzel+Decorative:wght@700&family=Contrail+One&family=Cormorant+Garamond&family=Kalam:wght@300&family=Passion+One&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">        
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .logo h1 {
+                color: red;
+                font-family: 'Caveat', cursive;
+                font-size: 40px;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+
+            nav{
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100px;
+                padding: 10px 90px;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-bottom:1px solid #fff;
+            }
+
+            nav.logo{
+                padding: 22px 20px;
+                height:80px;
+                float: left;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            nav ul{
+                list-style: none;
+                float: right;
+                margin-top: -100px;
+                padding: 0;
+                display: flex;
+                font-family: 'Baloo 2', cursive;
+                margin-right: 200px;
+            }
+
+            nav ul li a{
+                line-height: 80px;
+                color: #fff;
+                padding: 12px 30px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            nav ul li a:hover{
+                background: red;
+                color: black;
+                border-radius: 200px;
+            }
+            
+            section{
+                width: 100%;
+                height: 100vh;
+                background: white;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .logo img{
+                position: absolute;
+                margin-top: -115px;
+                margin-left: -40px;
+                width: 100px;
+            }
+
+            .select{
+                text-decoration:overline ;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown {
+                width: 250px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown{  
+                display: block;
+            }
+
+            ul li ul.dropdown2 li{
+                display: block;
+            }
+
+            ul li ul.dropdown2 {
+                width: 350px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown2{  
+                display: block;
+            }
+            
+
+
+            .intro h2{
+                float: left;
+                font-size: 50px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top: 100px;
+                margin-left: -700px;
+            }
+
+            .intro p{
+                float: left;
+                font-size: 25px;
+                font-family: 'Roboto Slab', serif;
+                margin-top: -30px;
+                margin-left: 100px;
+                margin-right: 400px;
+            }
+
+            .intro img{
+                width: 700px;
+                float: left;
+                margin-left: 100px;
+                margin-top: 200px;
+            }
+
+            .footer{
+                font-family: 'Times New Roman', Times, serif;
+                width: 100%;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-top:1px solid #fff;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>WakuWaku</h1>
+                <img src="wakuwaku.png" alt="Website Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span class="select"><a href="#">About</a></span>
+                    <ul class="dropdown">
+                        <li><a href="AboutMePage.html">About the Author</a></li>
+                        <li><a href="AboutTheWebsite.html">About the Website</a></li>
+                    </ul>
+                </li>
+                <li><a href="SpyXFamily.html">Spy X Family</a></li>
+                <li><a href="#">Characters</a>
+                    <ul class="dropdown2">
+                        <li><a href="loid.html">Loid Forger  "Twilight"</a></li>
+                        <li><a href="yor.html">Yor Forger  "Thorn Princess"</a></li>
+                        <li><a href="anya.html">Anya Forger  "Anya"</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="intro">
+                <img src="website.png" alt="home page">
+                <h2>About the Website</h2>
+                <p><br><br><b>The Home Page.</b> The home page serves as the introduction or welcome page of this website. <br><br><b>The About Pages.</b> There are two about pages: About the Author and About the Website. The about the author page contains minor info about me. The about the website page is where you are right now. Everything about this website is listed here.<br><br><b> The SpyXFamily Page. </b>This page contains the info about Spy X Family, which is the topic of this page. <br><br><b> The Characters Page. </b>Basically, it has the list of characters from Spy X Family. Though it will only contain the main characters that have been featured <i>only</i> in the anime - not the manga. <br><br><b> The Contacts Page. </b>This contains the contact of the author, that you may ask for support/help with this website. </p>
+            </div>
+        </section>
+    </body>
+</html>

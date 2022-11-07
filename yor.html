@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Yor Forger</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@600&family=Cinzel+Decorative:wght@700&family=Passion+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <style>
+
+            body{
+                margin:0;
+                padding:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .logo h1 {
+                color: red;
+                font-family: 'Caveat', cursive;
+                font-size: 40px;
+                margin-top: 20px;
+                margin-left: 60px;
+            }
+
+            nav{
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100px;
+                padding: 10px 90px;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-bottom:1px solid #fff;
+            }
+
+            nav.logo{
+                padding: 22px 20px;
+                height:80px;
+                float: left;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            nav ul{
+                list-style: none;
+                float: right;
+                margin-top: -100px;
+                padding: 0;
+                display: flex;
+                font-family: 'Baloo 2', cursive;
+                margin-right: 200px;
+            }
+
+            nav ul li a{
+                line-height: 80px;
+                color: #fff;
+                padding: 12px 30px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            nav ul li a:hover{
+                background: red;
+                color: black;
+                border-radius: 200px;
+            }
+            
+            section{
+                width: 100%;
+                height: 100vh;
+                background: #DC143C;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .logo img{
+                position: absolute;
+                margin-top: -115px;
+                margin-left: -40px;
+                width: 100px;
+            }
+
+            .select{
+                text-decoration:overline ;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown {
+                width: 250px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown{  
+                display: block;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown2 {
+                width: 350px;
+                box-sizing:border-box;
+                border-radius: 10px;
+                background: black;
+                border-left:1px solid #fff;
+                position: absolute;
+                display: none;
+                margin-top: 6px;
+            }
+
+            ul li a:hover{
+                background: #112C66;
+            }
+
+            ul li:hover ul.dropdown2{  
+                display: block;
+            }
+
+            .princess h2{
+                float: left;
+                font-size: 50px;
+                font-family: 'Tangerine', cursive;
+                margin-top: 130px;
+                margin-left: 100px;
+            }
+
+            .princess p{
+                float: left;
+                font-size: 25px;
+                font-family: 'Roboto Slab', serif;
+                margin-top: -270px;
+                margin-left: 100px;
+                margin-right: 700px;
+            }
+
+            .princess img{
+                float: right;
+                margin-top: 200px;
+                margin-right: 100px;
+                width: 300px;
+            }
+
+            .footer{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                width: 100%;
+                box-sizing:border-box;
+                background:rgba(0, 0, 0, 0.6);
+                border-top:1px solid #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>WakuWaku</h1>
+                <img src="wakuwaku.png" alt="Website Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="dropdown">
+                        <li><a href="AboutMePage.html">About the Author</a></li>
+                        <li><a href="AboutTheWebsite.html">About the Website</a></li>
+                    </ul>
+                </li>
+                <li><a href="SpyXFamily.html">Spy X Family</a></li>
+                <li><span class="select"><a href="#">Characters</a></span>
+                    <ul class="dropdown2">
+                        <li><a href="loid.html">Loid Forger  "Twilight"</a></li>
+                        <li><a href="yor.html">Yor Forger  "Thorn Princess"</a></li>
+                        <li><a href="anya.html">Anya Forger  "Anya"</a></li>
+                    </ul>
+                <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="princess">
+                <img src="yor2.png" alt="Yor Forger">
+                <h2>Yor Forger, aka Thorn Princess</h2>
+                <p>The tritagonist of the series. She is the wife of <a href="loid.html">Loid Forger</a> and the mother of <a href="anya.html">Anya Forger</a>. While working as an ordinary clerk at Berlint City Hall, she also lives a secret life as the Garden's assassin with the code name "Thorn Princess". Garden is an assassin group that operates within Ostania.<br><br> Yor is an attractive tall young woman - age of 27 and height of 170cm - with black hair and fair skin. When at home she wears a backless red off-shoulder sweater. When she is outside, she wears a long beige coat with black buttons over her clothes. As an assassin, she wears a form-fitting halter-style black dress. <br><br>She made her first appearance in chapter 2 of the manga series, and in episode 2 of the anime series. She is portrayed by the japanese voice actress Saori Hayami and english voice actress Natalie Van Sistine.  </p>
+            </div>
+        </section>
+        <div class="footer">
+            &copy; Image: Pinterest. Spy X Family Wiki. All Rights Reserved.
+        </div>
+    </body>
+</html>
