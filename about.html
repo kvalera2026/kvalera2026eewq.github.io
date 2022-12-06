@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>ChocoCafe</title>
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bad+Script&family=BhuTuka+Expanded+One&family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Courgette&family=Covered+By+Your+Grace&family=Cutive+Mono&family=IBM+Plex+Sans+Devanagari:wght@200&family=Indie+Flower&family=Klee+One:wght@600&family=Lemonada:wght@700&family=Nothing+You+Could+Do&family=Oswald:wght@300&display=swap" rel="stylesheet">       
+            <style> 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                }
+    
+                nav{
+                    width: 100%;
+                    float: left;
+                    text-align: center;
+                    width: 100%;
+                    padding: 35px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid silver;
+                    border-bottom-left-radius: 100px;
+                }
+
+                header{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+    
+                header img{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 500px;                       
+                }
+    
+                nav ul{
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                nav ul li{
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 70px;
+                    position: relative;
+                }
+    
+                nav ul li a{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #87CEFA;
+                    text-transform: uppercase;
+                }
+        
+                nav ul li::after{
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: #87CEFA;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.23s;
+                }
+
+                nav ul li:hover::after{
+                    width: 100%;
+                }
+
+                .active{
+                    background: #696969;
+                    color: #87CEFA;
+                    padding: 3px 30px;
+                }
+
+                section{
+                    width: 100%;
+                    height: 180vh;
+                    background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1)), url(background2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                article{
+                    text-align: center;
+                    display: inline-block;
+                    margin-top: 80px;
+                    margin-right: 100px;
+                    margin-left: 70px;
+                }
+
+                article img{
+                    margin-left: 60px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+
+                article h1{
+                    font-size: 25px;
+                    font-family: 'Lemonada', cursive;
+                    margin-left: 20px;
+                    color: cyan;
+                }
+
+                article p{
+                    font-size: 30px;
+                    font-family: 'Klee One', cursive;
+                    color: beige;
+                }
+
+                .cyan{
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Courgette', cursive;
+                }
+                     
+                footer{
+                    color: black;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
+
+                .Details{
+                    font-size: 25px;
+                    color: gray;
+                }
+                
+            </style>
+        </head>
+            <header>
+                <img src="logo2.png" alt="Logo">
+            </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html"><span class="active">About</span></a></li>
+                    </ul>
+                </nav>
+            <section>
+                <article>
+                    <h1>About the restaurant:</h1>
+                    <p><span class="cyan">Black Midnight promises to provide care, love, and peace to its costumers.</span><br/>  Black Midnight is just a newly built restaurant with limited products to offer. Though, these 10 items available will be worth your budget as prices in Black Midnight aren't cheap nor expensive, but just fair. Another promise Black Midnight will be commited to is we will make, develop, and learn more products to satisfy our dear costumers. </p>
+                </article>
+                <article>
+                    <h1>Details of the restaurant</h1>
+                    <p><span class="Details">Location:</span> San Jose City, Nueva Ecija<br/></p>
+                    <p><span class="Details">Date built:</span> December 06, 2022<br/></p>
+                    <p><span class="Details">Owner: </span>King Harold Emmanuel M. Valera<br/></p>
+                </article>
+                <article>
+                    <h1>Contacts</h1>
+                    <p><span class="Details">Email:</span> kvalera2026@clc.pshs.edu.ph</p>
+                    <p><span class="Details">Main Contact Number:</span> 0998 272 0681</p>
+                    <p><span class="Details">Secondary Contact Number:</span> 0949 361 8133</p>
+                </article>
+            </section>
+            <footer>
+                Copyright &copy; 2022. All rights reserved. 
+            </footer>
+        </body>
+    </html>

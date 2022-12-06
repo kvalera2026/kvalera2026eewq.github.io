@@ -1,202 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="utf-8">
+    <html lang="en">
     <head>
-        <title>Home Page</title>
+        <meta charset="utf-8">
+            <title>ChocoCafe</title>
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya&family=BhuTuka+Expanded+One&family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Covered+By+Your+Grace&family=Cutive+Mono&family=IBM+Plex+Sans+Devanagari:wght@200&family=Indie+Flower&family=Nothing+You+Could+Do&family=Oswald:wght@300&display=swap" rel="stylesheet">            
+            <style> 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                }
+    
+                nav{
+                    width: 100%;
+                    float: left;
+                    text-align: center;
+                    width: 100%;
+                    padding: 35px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid silver;
+                    border-bottom-left-radius: 100px;
+                }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@600&family=Cinzel+Decorative:wght@700&family=Contrail+One&family=Passion+One&display=swap" rel="stylesheet">
+                header{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+    
+                header img{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 500px;                       
+                }
+    
+                nav ul{
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                }
 
-        <style>
+                nav ul li{
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 70px;
+                    position: relative;
+                }
+    
+                nav ul li a{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #87CEFA;
+                    text-transform: uppercase;
+                }
+        
+                nav ul li::after{
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: #87CEFA;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.23s;
+                }
 
-            body{
-                margin:0;
-                padding:0;
-                font-family:Arial, Helvetica, sans-serif;
-            }
+                nav ul li:hover::after{
+                    width: 100%;
+                }
 
-            .logo h1 {
-                color: red;
-                font-family: 'Caveat', cursive;
-                font-size: 40px;
-                margin-top: 20px;
-                margin-left: 60px;
-            }
+                .active{
+                    background: #696969;
+                    color: #87CEFA;
+                    padding: 3px 30px;
+                }
 
-            nav{
-                position: fixed;
-                top:0;
-                left:0;
-                width:100%;
-                height:100px;
-                padding: 10px 90px;
-                box-sizing:border-box;
-                background:rgba(0, 0, 0, 0.6);
-                border-bottom:1px solid #fff;
-            }
+                section{
+                    width: 100%;
+                    height: 180vh;
+                    background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1)), url(background2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
 
-            nav.logo{
-                padding: 22px 20px;
-                height:80px;
-                float: left;
-                font-size: 24px;
-                font-weight: bold;
-                text-transform: uppercase;
-                color: #fff;
-            }
+                article{
+                    float: left;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    text-align: center;
+                }
 
-            nav ul{
-                list-style: none;
-                float: right;
-                margin-top: -100px;
-                padding: 0;
-                display: flex;
-                font-family: 'Baloo 2', cursive;
-                margin-right: 200px;
-            }
+                article img{
+                    width: 600px;
+                    display: inline-block;
+                    margin: 0 auto;
+                    text-align: center;
+                }
 
-            nav ul li a{
-                line-height: 80px;
-                color: #fff;
-                padding: 12px 30px;
-                text-decoration: none;
-                font-size: 14px;
-                font-weight: bold;
-                text-transform: uppercase;
-                font-size: 20px;
-            }
+                article h1, p{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    color: #87CEFA;
+                    font-size: 30px;
+                    font-family: 'Cormorant Garamond', serif;
+                }
 
-            nav ul li a:hover{
-                background: red;
-                color: black;
-                border-radius: 200px;
-            }
-            
-            section{
-                width: 100%;
-                height: 100vh;
-                background: url(anya2.jpg);
-                background-size: cover;
-                background-position: center;
-            }
+                .article2{
+                    float: left;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    width: 800px;
+                    box-sizing: border-box;
+                    border: 1px solid white;
+                }
 
-            .logo img{
-                position: absolute;
-                margin-top: -115px;
-                margin-left: -40px;
-                width: 100px;
-            }
+                .article2 h1{
+                    color: white;
+                    text-align: center;
+                    font-size: 40px;
+                    color: red;
+                    font-family: 'Cinzel Decorative', cursive;
+                    text-underline-offset: 20px;
+                }
 
-            .select{
-                text-decoration:overline ;
-            }
+                .article2 video{
+                    float: left;
+                    width: 400px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
 
-            ul li ul.dropdown li{
-                display: block;
-            }
+                .video2{
+                    margin-top: 30px;
+                }
 
-            ul li ul.dropdown {
-                width: 250px;
-                box-sizing:border-box;
-                border-radius: 10px;
-                background: black;
-                border-left:1px solid #fff;
-                position: absolute;
-                display: none;
-                margin-top: 6px;
-            }
+                .CoffeeArticle h1{
+                    margin-top: 70px;
+                    font-family: 'Oswald', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
 
-            ul li a:hover{
-                background: #112C66;
-            }
+                .CoffeeArticle p{
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: center;
+                    color: white;
+                }
 
-            ul li:hover ul.dropdown{  
-                display: block;
-            }
+                .CakeArticle h1{
+                    margin-top: 70px;
+                    font-family: 'Oswald', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
 
-            ul li ul.dropdown2 li{
-                display: block;
-            }
+                .CakeArticle p{
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: center;
+                    color: white;
+                }
+                
+                footer{
+                    color: black;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
 
-            ul li ul.dropdown2 {
-                width: 350px;
-                box-sizing:border-box;
-                border-radius: 10px;
-                background: black;
-                border-left:1px solid #fff;
-                position: absolute;
-                display: none;
-                margin-top: 6px;
-            }
+                aside{
+                    display: block;
+                    width: 400px;
+                    height: 100px;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    display: inline-block;
+                    box-sizing: border-box;
+                }
 
-            ul li a:hover{
-                background: #112C66;
-            }
+                aside figure img{
+                    display: block;
+                    width: 300px;
+                    text-align: center;
+                    display: inline-block;
+                }
 
-            ul li:hover ul.dropdown2{  
-                display: block;
-            }
+                aside figure figcaption{
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Oswald', sans-serif;
+                    text-align: center;
+                }
 
-            h2 {
-                font-size: 100px;
-                float: left;
-                margin-top: 200px;
-                margin-left: 100px;
-                font-family:'Contrail One', cursive;
-            }
+                aside h1{
+                    margin-left: 20px;
+                    color: white;
+                    font-family: 'Cutive Mono', monospace;
+                    font-size: 20px;
+                }
 
-            p{
-                font-size: 30px;
-                float: left;
-                margin-left: 100px;
-                margin-top: -80px;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-            
-            .footer{
-                font-family: 'Times New Roman', Times, serif;
-                width: 100%;
-                box-sizing:border-box;
-                background:rgba(0, 0, 0, 0.6);
-                border-top:1px solid #fff;
-                text-align: center;
-            }
+                .green{
+                    color: green;
+                }
 
-        </style>
-    </head>
-    <body>
-        <nav>
-            <div class="logo">
-                <h1>WakuWaku</h1>
-                <img src="wakuwaku.png" alt="Website Logo">
-            </div>
-            <ul>
-                <li><span class="select"><a href="index.html">Home</a></span></li>
-                <li><a href="#">About</a>
-                    <ul class="dropdown">
-                        <li><a href="AboutMePage.html">About the Author</a></li>
-                        <li><a href="AboutTheWebsite.html">About the Website</a></li>
+                aside ul li{
+                    font-size: 20px;
+                    margin-right: 20px;
+                    color: white;
+                    font-family: 'Alegreya', serif;                 
+                }
+
+                aside h2{
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .dyk{
+                    color: red;
+                    font-family: 'Covered By Your Grace', cursive;
+                    font-size: 50px;
+                }
+            </style>
+        </head>
+            <header>
+                <img src="logo2.png" alt="Logo">
+            </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span class="active">Home</span></a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
-                </li>
-                <li><a href="SpyXFamily.html">Spy X Family</a></li>
-                <li><a href="#">Characters</a>
-                    <ul class="dropdown2">
-                        <li><a href="loid.html">Loid Forger  "Twilight"</a></li>
-                        <li><a href="yor.html">Yor Forger  "Thorn Princess"</a></li>
-                        <li><a href="anya.html">Anya Forger  "Anya"</a></li>
+                </nav>
+            <section>
+                <article>
+                    <img src="logo2.png" alt="Logo">
+                    <p>Welcome to Black Midnight. A peaceful and quiet place to chill with your favorite drinks and desserts. With lots of different sizes, portions, and flavors, Black Midnight also offers an affordable price for you.</p>
+                </article>
+                <div class="article2">
+                    <h1>Our Specialty!</h1>
+                    <video width="10" controls>
+                        <source src="coffee2.mp4">
+                    </video>
+                    <div class="CoffeeArticle">
+                        <h1>Black Coffee</h1>
+                        <p>&nbsp; We were bored doing nothing, so we brewed roasted coffee beans.</p>
+                    </div>
+                    <video class="video2" controls>
+                        <source src="cake2.mp4">
+                    </video>
+                    <div class="CakeArticle">
+                        <h1>Chocolate cake</h1>
+                        <p>One night, I dreamt about a strawberry cake. As soon as I woke up, I went to the &nbsp; kitchen and prepared the ingredients. It took me 7 hours to finally make a perfect chocolate cake.</p>
+                    </div>
+                </div>
+                <aside>
+                    <figure>
+                        <img src="blackcoffee.jpg">
+                        <figcaption>Black Coffee</figcaption>
+                    </figure>
+                    <h2><span class="dyk">DYK!?</span><br> Black Coffee:</h2>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>Improves your<span class="green"> Mood</span></dt>
+                                <dd>Depression affects more than 18 million people in the world. Studies show that coffee reduces the risk of depression especially if you drink four or more cups a day.</dd>
+                            </dl>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <section>
-            <h2>Welcome to WakuWaku!</h2>
-            <p>Want to know more about "Spy X Family"? Proceed to any of these pages!</p>
-        </section>
-        <div class="footer">
-            &copy; Image: Image Abyss, All Rights Reserved.
-        </div>
-    </body>
-</html>
+                    <p>Resource: <a href="https://www.webmd.com/diet/health-benefits-black-coffee#:~:text=Black%20coffee%20is%20rich%20in,of%20vitamin%20B2%20and%20magnesium.">WebMD</a></p>
+                </aside>
+            </section>
+            <footer>
+                Copyright &copy; 2022. All rights reserved. 
+            </footer>
+        </body>
+    </html>

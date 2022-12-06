@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>ChocoCafe</title>
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bad+Script&family=BhuTuka+Expanded+One&family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Covered+By+Your+Grace&family=Cutive+Mono&family=IBM+Plex+Sans+Devanagari:wght@200&family=Indie+Flower&family=Klee+One:wght@600&family=Lemonada:wght@700&family=Nothing+You+Could+Do&family=Oswald:wght@300&display=swap" rel="stylesheet">            
+            <style> 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                }
+    
+                nav{
+                    width: 100%;
+                    float: left;
+                    text-align: center;
+                    width: 100%;
+                    padding: 35px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid silver;
+                    border-bottom-left-radius: 100px;
+                }
+
+                header{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+    
+                header img{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 500px;                       
+                }
+    
+                nav ul{
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                nav ul li{
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 70px;
+                    position: relative;
+                }
+    
+                nav ul li a{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #87CEFA;
+                    text-transform: uppercase;
+                }
+        
+                nav ul li::after{
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: #87CEFA;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.23s;
+                }
+
+                nav ul li:hover::after{
+                    width: 100%;
+                }
+
+                .active{
+                    background: #696969;
+                    color: #87CEFA;
+                    padding: 3px 30px;
+                }
+
+                section{
+                    width: 100%;
+                    height: 180vh;
+                    background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1)), url(background2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                article{
+                    text-align: center;
+                    display: inline-block;
+                    margin-top: 80px;
+                    margin-right: 100px;
+                    margin-left: 70px;
+                }
+
+                article img{
+                    margin-left: 60px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+
+                article h1{
+                    font-size: 25px;
+                    font-family: 'Lemonada', cursive;
+                    margin-left: 20px;
+                    color: cyan;
+                }
+
+                article p{
+                    font-size: 20px;
+                    font-family: 'Klee One', cursive;
+                    color: beige;
+                }
+                     
+                footer{
+                    color: black;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
+
+                
+            </style>
+        </head>
+            <header>
+                <img src="logo2.png" alt="Logo">
+            </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html"><span class="active">Menu</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            <section>
+                <article>
+                    <h1>Beverages</h1>
+                    <img src="blackcoffee.png" alt="blackcoffee">
+                    <img src="matcha.png" alt="matcha">
+                    <img src="cappuccino.png" alt="cappuccino">
+                    <img src="mangoshake.png" alt="mangoshake">
+                    <img src="strawberryshake.png" alt="strawberryshake">
+                </article>
+                <article>
+                    <h1>Sandwiches and Breads</h1>
+                    <img src="grilledcheesesandwich.png" alt="grilledcheesesandwich">
+                    <img src="hamandeggandcheesesandwich.png" alt="hamandeggcheesesandwich">
+                    <img src="veggiesandwich.png" alt="veggiesandwich">
+                    <img src="garlicbread.png" alt="garlicbread">
+                    <img src="koreancreamcheesegarlicbread.png" alt="koreancreamcheesegarlicbread">
+                </article>
+            </section>
+            <footer>
+                Copyright &copy; 2022. All rights reserved. 
+            </footer>
+        </body>
+    </html>
